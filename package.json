@@ -1,0 +1,25 @@
+{
+  "name": "infovis-tp1",
+  "version": "1.0.0",
+  "description": "Radiocut visualization project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgoffan/infovis-tp1.git"
+  },
+  "keywords": [
+    "visualization",
+    "information",
+    "infovis",
+    "radiocut"
+  ],
+  "author": "Martin Goffan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgoffan/infovis-tp1/issues"
+  },
+  "homepage": "https://github.com/mgoffan/infovis-tp1#readme"
+}
