@@ -37,7 +37,8 @@ class CustomTooltip extends Component {
         }}>
           <h2 style={{margin:0,padding:0}}>{p.radio}</h2>
           <p style={{margin:0,padding:0,color:'#aaa'}}><b>Mobile usage in {p.month} {p.year}</b>: {p.percentage}%</p>
-          <p className="desc">{p.mobile} users used their cellphones to use play cuts in {p.month} {p.year}</p>
+          <p className="desc">{p.mobile.formatMoney()} users used their cellphones to use play cuts in {p.month} {p.year}</p>
+          <p className="desc">{p.total.formatMoney()} total users played cuts in {p.month} {p.year}</p>
         </div>
       );
     }
@@ -192,7 +193,8 @@ class App extends Component {
 		      		scale='log'
 		      		domain={[500, 2 * this.maxTotal]}
 		      		dataKey={'total'}
-		      		tickCount={50}/>
+		      		tickCount={50}
+		      		tickFormatter={v => v.formatMoney()}/>
 		      	<CartesianGrid />
 		      	<Tooltip content={<CustomTooltip />}/>
 		      	
