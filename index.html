@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="full-height" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Webpack Workbox React Boilerplate</title>
+  <meta name="description" content="Webpack Workbox React Boilerplate">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Tajawal:400,700" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>html,body{padding:0;margin:0;font-family: 'Tajawal', sans-serif}.full-height{height:100%;min-height:100%}.btn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  color: #444;
+  background: #fff;
+  padding: 5px 10px 5px 10px;
+  border: solid #444 1px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}</style>
+<script type="text/javascript">Number.prototype.formatMoney = function(c, d, t){
+    var n = this, 
+    c = isNaN(c = Math.abs(c)) ? 0 : c, 
+    d = d == undefined ? "," : d, 
+    t = t == undefined ? "." : t, 
+    s = n < 0 ? "-" : "", 
+    i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))), 
+    j = (j = i.length) > 3 ? j % 3 : 0;
+   return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+ };</script>
+</head>
+<body class="view-login full-height">
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root" class="full-height"></div>
+  <script src="./vendor/vendors.js"></script>
+<script type="text/javascript" src="./app-c963baf5837140e443cb.min.js"></script></body>
+</html>
